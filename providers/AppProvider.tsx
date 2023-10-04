@@ -1,4 +1,5 @@
 import React from 'react'
+import ModalProvider from './ModalProvider'
 
 type Props = {
     children: React.ReactNode
@@ -6,9 +7,9 @@ type Props = {
 
 function AppProvider({ children }: Props) {
     return (
-        <>
-            {children}
-        </>
+        <ModalProvider>
+        {children}
+        </ModalProvider>
     )
 }
 
