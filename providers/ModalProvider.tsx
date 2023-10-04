@@ -46,7 +46,6 @@ function ModalProvider({ children }: Props) {
             {children}
             <MyDialog
                 {...values}
-                nextAction={dialogContent?.nextAction}
             />
         </ModalContext.Provider>
     )

@@ -3,15 +3,12 @@ import { Dialog, Transition } from '@headlessui/react'
 import { Fragment, useState } from 'react'
 
 type Props = {
-    title: string,
-    description: string;
-    nextAction: (vl: any) => void;
-    dialogContent: dialogTypes,
+    dialogContent: dialogTypes | null,
     isOpen: boolean,
     setIsOpen: (vl: boolean) => void;
 }
 
-export default function MyModal({ title, description, nextAction, dialogContent, isOpen, setIsOpen }: Props) {
+export default function MyModal({ dialogContent, isOpen, setIsOpen }: Props) {
 
 
     return (
@@ -44,29 +41,15 @@ export default function MyModal({ title, description, nextAction, dialogContent,
                                 <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
                                     <Dialog.Title
                                         as="h3"
-                                        className="text-lg font-medium leading-6 text-gray-900"
+                                        className="text-lg  leading-6 text-gray-900 font-bold"
                                     >
-                                        {title}
+                                        {dialogContent?.title}
                                     </Dialog.Title>
-                                  {dialogContent?.children}
+                                    <Dialog.Description className={'mt-5 mb-5'}>
+                                        {dialogContent?.description}
+                                    </Dialog.Description>
+                                    {dialogContent?.children}
 
-                                    <div className="mt-4 flex gap-4">
-                                        <button
-                                            type="button"
-                                            className="inline-flex justify-center rounded-md border border-transparent bg-blue-900 px-4 py-2 text-sm font-medium text-blue-100 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
-                                            onClick={nextAction} 
-                                        >
-                                            Continue
-                                        </button>
-                                        <button
-                                            type="button"
-                                            className="inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
-                                            onClick={() => setIsOpen(false)}
-                                        >
-                                            Cancel
-                                        </button>
-                                    </div>
-                                    
                                 </Dialog.Panel>
                             </Transition.Child>
                         </div>

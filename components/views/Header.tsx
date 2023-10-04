@@ -37,7 +37,7 @@ function Header({ }: Props) {
                         title: "Create Account",
                         description: 'Sign up with your email for registration ',
                         children: <Signup />,
-                        nextAction: () => { },  
+                        nextAction: () => { },
                     })
                 }}
             >get started</Button>
