@@ -29,3 +29,15 @@ export const howtos = [
       "Live streaming has transformed the way content creators and their audiences interact, bringing a new level of engagement and connection. In this digital age, creators from various platforms engage with their viewers in real time, fostering a ",
   },
 ];
+
+export const about = [
+  {
+    title: "live stream",
+    description: "You live stream and give interesting content to th world",
+  },
+  { title: "challenges", description: "Challenge with other users " },
+  {
+    title: "make money",
+    description: "Make money bt recieving gifts and coins from your followers",
+  },
+];

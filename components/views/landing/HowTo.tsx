@@ -7,7 +7,7 @@ type Props = {}
 
 function HowTo({ }: Props) {
     return (
-        <div className=' mt-14 w-full h-auto p-5 flex flex-col items-center gap-5'>
+        <div className=' mt-5 w-full h-auto p-5 flex flex-col items-center gap-5'>
             <h1 className='text-[#000720] text-center text-[3rem] font-bold'>
                 How to make money <br></br> now with <span className='text-[#D7DF4D] '>Live Stream</span>
             </h1>
