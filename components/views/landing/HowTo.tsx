@@ -13,7 +13,7 @@ function HowTo({ }: Props) {
             </h1>
             <p className='w-[70%] text-center text-[0.9rem] mt-5 text-[#3A3A3A]'>Live streaming has transformed the way content creators and their audiences interact, bringing a new level of engagement and connection. In this digital age, creators from various platforms engage with their viewers in real time, fostering a sense of community and shared experience. One intriguing aspect of live streams is the ability for viewers to express their appreciation through virtual gifts. These gifts can range</p>
 
-            <div className='w-full grid grid-cols-3 gap-5'>
+            <div className='w-full grid sm:grid-cols-3 grid-cols-1 gap-5'>
                 {
                     howtos.map(howto => (
                         <HowToCard {...howto} key={howto.title} />

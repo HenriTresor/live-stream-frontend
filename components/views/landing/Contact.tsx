@@ -12,7 +12,7 @@ function Contact({ }: Props) {
         >
 
             <div className='w-[90%] border-2 rounded-sm p-5 flex '>
-                <div className='w-[40%] flex gap-5 flex-col justify-start items-start'>
+                <div className='w-[40%] sm:flex gap-5 flex-col justify-start items-start hidden'>
                     <h1 className='text-[4rem] font-bold'>
                         Let’s Get in <br />
                         Touch
@@ -23,7 +23,7 @@ function Contact({ }: Props) {
                     </p>
                     <p className='font-bold border-b-2 text-center'><span className='text-[#D7DF4D]'>livestreaming</span>@gmail.com</p>
                 </div>
-                <div className='w-[60%] grid grid-cols-2 gap-5'>
+                <div className='sm:w-[60%] w-full grid grid-cols-2 gap-5'>
                     <div className='w-full '>
                         <Label htmlFor='fullName'>Full Name</Label>
                         <Input
@@ -50,14 +50,14 @@ function Contact({ }: Props) {
                     </div>
                     <div className='w-full '>
                         <Label htmlFor='address'>Home Adress</Label>
-                        <Input 
+                        <Input
                             id='address'
                             name='address'
                             placeholder='Gergia, Inc'
                         />
                     </div>
                     <div className='w-full col-span-2'>
-                        <textarea name="" className='w-[100%] border rounded-sm p-3' rows={10} placeholder='message...' cols={100}  id=""></textarea>
+                        <textarea name="" className='w-[100%] border rounded-sm p-3' rows={10} placeholder='message...' cols={100} id=""></textarea>
                     </div>
                     <Button className='flex justify-evenly'>Submit message <span className='border-l border-white'>→</span></Button>
                 </div>
