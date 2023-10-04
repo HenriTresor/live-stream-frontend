@@ -6,7 +6,7 @@ type Props = {}
 
 function Hero({}: Props) {
   return (
-      <div className='w-full h-auto p-1 text-white flex justify-between relative'>
+      <div className='w-full h-auto p-1 text-white flex justify-between relative mt-10'>
           <svg className='w-[98%] h-auto absolute -z-10 right-5 hidden sm:block' viewBox="0 0 1520 542" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M0 0H1520V542L0 455.198V0Z" fill="#ADBC8C" />
           </svg>
