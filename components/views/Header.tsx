@@ -6,6 +6,7 @@ import React from 'react'
 import { Button } from '../ui/button'
 import { ModalContext } from '@/providers/ModalProvider'
 import Signup from './forms/Signup'
+import Login from './forms/Login'
 
 type Props = {}
 
