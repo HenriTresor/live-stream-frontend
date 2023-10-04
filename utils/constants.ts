@@ -1,9 +1,16 @@
-export const navListItems = [
-  { name: "home", link: "" },
-  { name: "about us", link: "" },
-  { name: "features", link: "" },
-  { name: "contact us", link: "" },
-];
+export const navListItems = {
+  quickLinks: [
+    { name: "home", link: "" },
+    { name: "about us", link: "" },
+    { name: "features", link: "" },
+    { name: "contact us", link: "" },
+  ],
+  company: [
+    { name: "Terms of user", link: "" },
+    { name: "FAQ", link: "" },
+    { name: "license", link: "" },
+  ],
+};
 
 export const howtos = [
   {
