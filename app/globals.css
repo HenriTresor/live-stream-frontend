@@ -5,7 +5,7 @@
   @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&family=Roboto:wght@300&display=swap');
 
 html, body{
-  font-family: Montserrat, Roboto, Poppins, Helvetica, ;
+  font-family: 'Montserrat', 'Roboto', 'Poppins', Helvetica;
 }
 @layer base {
   :root {

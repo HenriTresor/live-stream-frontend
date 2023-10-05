@@ -5,7 +5,7 @@ type Props = {}
 
 function Header({}: Props) {
   return (
-      <div className='flex w-full p-3'>
+      <div className='flex w-full p-3 col-span-4'>
           <div className='flex item-center gap-5'>
               <Image
                   src={'/icon.svg'}
