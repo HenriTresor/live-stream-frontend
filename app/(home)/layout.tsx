@@ -8,10 +8,12 @@ type Props = {}
 
 function layout({ }: Props) {
     return (
-        <div className='m-0 p-0 grid grid-cols-4'>
-            <Header />
+        <div className='m-0 p-0 flex'>
             <Aside />
-            <Body />
+            <div className='w-[80%]'>
+                <Header />
+                <Body />
+            </div>
         </div>
     )
 }
