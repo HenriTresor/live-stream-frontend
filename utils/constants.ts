@@ -1,3 +1,11 @@
+import {
+  FaHome,
+  FaCamera,
+  FaHeadset,
+  FaPersonBooth,
+  FaTrophy,
+} from "react-icons/fa";
+
 export const navListItems = {
   quickLinks: [
     { name: "home", link: "" },
@@ -40,4 +48,12 @@ export const about = [
     title: "make money",
     description: "Make money bt recieving gifts and coins from your followers",
   },
+];
+
+export const homeSideMenu = [
+  { name: "Home page", link: "", icon: FaHome },
+  { name: "Streams", link: "", icon: FaCamera },
+  { name: "Streamers", link: "", icon: FaHeadset },
+  { name: "Friends", link: "", icon: FaPersonBooth },
+  { name: "challenges", link: "", icon: FaTrophy },
 ];
