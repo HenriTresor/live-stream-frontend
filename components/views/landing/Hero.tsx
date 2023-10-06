@@ -15,7 +15,7 @@ function Hero({}: Props) {
                   Start live streaming and making money with Live Stream
               </h1>
               <p className='text-[1.3rem]'>Start live streaming and making money with Live Stream Start live streaming and making money with Live Stream Start live streaming and making money with Live Stream Start live streaming and making money with Live Stream Start live streaming and making money with Live Stream</p>
-              <Button className='capitalize bg-white text-black font-bold '>get started</Button>
+              <Button className='capitalize font-bold '>get started</Button>
           </div>
           <div className='w-1/2 sm:grid hidden place-content-center relative'>
 

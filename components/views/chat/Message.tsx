@@ -14,7 +14,7 @@ type Props = {
 
 function Message({ sender, createdAt, latestMsg, seen }: Props) {
     return (
-        <div className='flex items-center justify-between p-2 mb-3 border-b'>
+        <div className='flex items-center justify-between p-2 mb-3 border-b text-[.9em] cursor-pointer'>
             <div className='flex items-center gap-2'>
                 <Avatar>
                     <AvatarImage />

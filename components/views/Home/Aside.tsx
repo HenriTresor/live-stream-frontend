@@ -24,7 +24,7 @@ function Aside({ }: Props) {
           <h1 className='font-bold capitalize text-[1.3rem]'>Videbucks</h1>
         </div>
 
-        <Button className='flex items-center gap-5'>
+        <Button className='bg-gradient flex items-center gap-5'>
           <FaStream />
           Stream</Button>
 
@@ -42,7 +42,7 @@ function Aside({ }: Props) {
 
       <div className='w-full flex flex-col'>
 
-        <Button className='flex items-center gap-5'>
+        <Button className='flex items-center gap-5 bg-gradient '>
           <FaPlus />
           Add a Friend</Button>
       </div>
