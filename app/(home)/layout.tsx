@@ -4,15 +4,17 @@ import React from 'react'
 import '../../app/globals.css'
 import Body from '@/components/views/Home/Body'
 
-type Props = {}
+type Props = {
+    children: React.ReactNode
+}
 
-function layout({ }: Props) {
+function layout({ children }: Props) {
     return (
         <div className='m-0 p-0 flex'>
             <Aside />
             <div className='w-[80%]'>
                 <Header />
-                <Body />
+                {children}
             </div>
         </div>
     )
