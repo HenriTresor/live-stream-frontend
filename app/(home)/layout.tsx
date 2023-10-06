@@ -14,13 +14,16 @@ type Props = {
 
 function Layout({ children }: Props) {
     return (
-        <section className={`${inter.className} m-0 p-0 flex`}>
-            <Aside />
-            <div className='w-[80%]'>
-                <Header />
-                {children}
-            </div>
-        </section>
+        <div className={inter.className}>
+
+            <section className={`m-0 p-0 flex`}>
+                <Aside />
+                <div className='w-[80%]'>
+                    <Header />
+                    {children}
+                </div>
+            </section>
+        </div>
     )
 }
 
