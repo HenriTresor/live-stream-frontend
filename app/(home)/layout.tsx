@@ -1,4 +1,3 @@
-'use client'
 import Aside from '@/components/views/Home/Aside'
 import Header from '@/components/views/Home/Header'
 import React from 'react'
@@ -18,19 +17,14 @@ type Props = {
 
 function layout({ children }: Props) {
     return (
-        <>
-            <Head>
-                <title>Vidbucks</title>
-                <meta name="description" content="vidbucks dashboard" />
-            </Head>
-            <div className={`${inter.className} m-0 p-0 flex`}>
-                <Aside />
-                <div className='w-[80%]'>
-                    <Header />
-                    {children}
-                </div>
+
+        <div className={`${inter.className} m-0 p-0 flex`}>
+            <Aside />
+            <div className='w-[80%]'>
+                <Header />
+                {children}
             </div>
-        </>
+        </div>
     )
 }
 
