@@ -1,5 +1,6 @@
 import React from 'react'
 import play from "../assets/play.svg"
+import Image from 'next/image';
 interface Props {
     thumbnail: string;
     name: string;
@@ -15,9 +16,9 @@ const TrendingStream: React.FC<Props> = ({ thumbnail, name, views, id, creatorNa
     return (
         <div className=' bg-[rgba(71,112,255,0.08)] rounded-xl'>
             <div className='relative'>
-                <img src={thumbnail} alt="" className='w-full rounded-xl h-[200px]' />
+                <Image width={100} height={100} src={thumbnail} alt="" className='w-full rounded-xl h-[200px]' />
                 <div className="absolute p-2 rounded-full bg-gradient-to-br from-[#E179CB] to-[#D7DF4D] top-[45%] left-[45%] flex items-center justify-center cursor-pointer">
-                    <img src={play} alt="" className='w-5 h-5' />
+                    <Image width={100} height={100} src={play} alt="" className='w-5 h-5' />
                 </div>
                 {live && <div className='absolute px-2 py-0.5 rounded-full bg-gradient-to-br from-[#E179CB] to-[#D7DF4D] top-2 right-2'>Live</div>}
             </div>
