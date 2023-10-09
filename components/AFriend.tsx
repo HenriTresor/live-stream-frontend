@@ -3,10 +3,10 @@ import add from "../assets/add.svg"
 interface Props {
     image: string;
     name: string;
-    category: string;
+    category?: string;
     followers: number;
     following: number;
-    flw: "no" | "yes" | "back"
+    flw: any
 }
 
 
