@@ -20,7 +20,9 @@ function Layout({ children }: Props) {
                 <Aside />
                 <div className='w-[80%]'>
                     <Header />
-                    {children}
+                    <div className='overflow-auto h-[100dvh]'>
+                        {children}
+                    </div>
                 </div>
             </section>
         </div>
