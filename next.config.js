@@ -2,6 +2,9 @@
 const nextConfig = {
     images: {
         domains: ['images.unsplash.com', 'i.pinimg.com']
+    },
+    experimental: {
+        appDir: true
     }
 }
 

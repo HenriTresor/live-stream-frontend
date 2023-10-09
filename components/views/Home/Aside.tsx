@@ -6,6 +6,7 @@ import Link from 'next/link'
 import React from 'react'
 import { FaStream, FaPlus } from 'react-icons/fa'
 import { usePathname } from 'next/navigation'
+import { IconBase } from 'react-icons/lib'
 
 type Props = {}
 
@@ -32,7 +33,7 @@ function Aside({ }: Props) {
           {
             homeSideMenu.map(item => (
               <Link key={item.name} href={item.link} className={`w-full p-2 flex items-center justify-normal gap-5 font-bold ${pathname === item.link && `bg-gray-100 border-r-2 border-r-orange-600`} mb-3 text-[#00000082] cursor-pointer`}>
-                {item.icon()}
+                {item.LinkIcon({})}
                 {item.name}
               </Link>
             ))

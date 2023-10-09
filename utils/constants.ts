@@ -3,8 +3,8 @@ import {
   FaCamera,
   FaHeadset,
   FaPersonBooth,
-  FaTrophy, 
-  FaFacebookMessenger
+  FaTrophy,
+  FaFacebookMessenger,
 } from "react-icons/fa";
 
 export const navListItems = {
@@ -52,15 +52,13 @@ export const about = [
 ];
 
 export const homeSideMenu = [
-  { name: "Home page", link: "/home", icon: FaHome },
-  { name: "Streams", link: "/streams", icon: FaCamera },
-  { name: "Streamers", link: "/streamers", icon: FaHeadset },
-  { name: "Friends", link: "/friends", icon: FaPersonBooth },
-  { name: "challenges", link: "/challenges", icon: FaTrophy },
-  { name: "chat", link: "/chat", icon: FaFacebookMessenger },
+  { name: "Home page", link: "/home", LinkIcon: FaHome },
+  { name: "Streams", link: "/streams", LinkIcon: FaCamera },
+  { name: "Streamers", link: "/streamers", LinkIcon: FaHeadset },
+  { name: "Friends", link: "/friends", LinkIcon: FaPersonBooth },
+  { name: "challenges", link: "/challenges", LinkIcon: FaTrophy },
+  { name: "chat", link: "/chat", LinkIcon: FaFacebookMessenger },
 ];
-
-
 
 export const settings = [
   {

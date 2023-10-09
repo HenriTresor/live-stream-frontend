@@ -1,4 +1,4 @@
-import React from 'react'
+'use client'
 import { settings } from '@/utils/constants'
 import forward from "../../../assets/forward.svg"
 import Link from 'next/link'
@@ -6,7 +6,7 @@ import Image from 'next/image'
 const Settings: React.FC = () => {
     return (
         <div className='w-full p-5 overflow-y-auto'>
-           
+
             <p className='font-lin text-xl font-semibold my-2'>Settings</p>
             <div>
                 {settings.map((setting, i) => {

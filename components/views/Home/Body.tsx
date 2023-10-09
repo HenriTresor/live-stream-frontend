@@ -1,5 +1,4 @@
-import React from 'react'
-
+'use strict';
 type Props = {}
 
 function Body({ }: Props) {

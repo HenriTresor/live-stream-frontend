@@ -1,6 +1,7 @@
+'use strict';
+'use client'
 import Aside from '@/components/views/Home/Aside'
 import Header from '@/components/views/Home/Header'
-import React from 'react'
 import { Montserrat } from 'next/font/google'
 import '@/app/globals.css'
 
