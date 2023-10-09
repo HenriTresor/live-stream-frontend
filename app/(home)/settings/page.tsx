@@ -19,7 +19,7 @@ const Settings: React.FC = () => {
                                         <Link href={item.link} key={i}>
                                             <div className='shadow-md flex justify-between items-center px-4 py-2 rounded-lg'>
                                                 <div className='flex gap-3'>
-                                                    <Image width={100} height={100} src={item.icon} alt="" />
+                                                    <Image width={100} height={100} src={''} alt="" />
                                                     <div>
                                                         <p className='font-semibold text-base my-1'>{item.title}</p>
                                                         <p className='font-semibold text-sm text-gray-800  '>{item.body}</p>
