@@ -1,9 +1,8 @@
 import Aside from '@/components/views/Home/Aside'
 import Header from '@/components/views/Home/Header'
 import React from 'react'
-import '../../app/globals.css'
 import { Montserrat } from 'next/font/google'
-
+import '@/app/globals.css'
 
 const inter = Montserrat({ subsets: ['latin'] })
 
