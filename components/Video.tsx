@@ -1,3 +1,4 @@
+'use client'
 import React, { useState } from 'react'
 
 interface Props {
@@ -21,7 +22,7 @@ const Video: React.FC<Props> = ({ link }) => {
 					<div
 						className="video-placeholder"
 						style={{
-							backgroundImage: `url(${link})`, 
+							backgroundImage: `url(${link})`,
 						}}
 					>
 						<button className="play-button" onClick={playVideo}>
