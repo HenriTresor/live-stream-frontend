@@ -1,5 +1,4 @@
-'use strict';
-'use client'
+
 import Aside from '@/components/views/Home/Aside'
 import Header from '@/components/views/Home/Header'
 import { Montserrat } from 'next/font/google'
@@ -12,7 +11,7 @@ type Props = {
     children: React.ReactNode
 }
 
-function Layout({ children }: Props) {
+function HomeLayout({ children }: Props) {
     return (
         <div className={inter.className}>
 
@@ -29,4 +28,4 @@ function Layout({ children }: Props) {
     )
 }
 
-export default Layout
+export default HomeLayout
